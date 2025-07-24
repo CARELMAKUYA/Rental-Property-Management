@@ -450,7 +450,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <div className="min-h-screen bg-gray-50">
       <Header user={mockData.user} />
 
       <main className="max-w-7xl mx-auto px-6 py-12">
