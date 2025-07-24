@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, Plus, Mail, Phone, CreditCard, Calendar, MapPin, AlertTriangle } from 'lucide-react';
+import { Search, Filter, Plus, Mail, Phone, CreditCard, Calendar, MapPin, AlertTriangle, DollarSign, Users } from 'lucide-react';
 import { formatCurrency, formatDate, getStatusColor } from '../utils/helpers';
 import mockData from '../data/mockData';
 
@@ -33,13 +33,13 @@ const Tenants = () => {
 
   const TenantCard = ({ tenant }) => {
     const isLeaseExpiringSoon = new Date(tenant.leaseEnd) - new Date() < 90 * 24 * 60 * 60 * 1000; // 90 days
-    
+
     return (
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center space-x-4">
-            <img 
-              src={tenant.avatar} 
+            <img
+              src={tenant.avatar}
               alt={tenant.name}
               className="w-16 h-16 rounded-full border-3 border-white shadow-lg"
             />
@@ -82,7 +82,7 @@ const Tenants = () => {
             </div>
             <p className="text-lg font-bold text-gray-900">{formatCurrency(tenant.rentAmount)}</p>
           </div>
-          
+
           <div className="bg-gray-50 rounded-xl p-3">
             <div className="flex items-center mb-2">
               <CreditCard className="w-4 h-4 text-gray-500 mr-2" />
@@ -218,7 +218,7 @@ const Tenants = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
           <div className="flex items-center justify-between">
             <div>
