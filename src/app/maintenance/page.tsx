@@ -20,7 +20,6 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import Header from "@/components/Header";
 import { formatCurrency, formatDate, getStatusChipColor } from "@/utils/helpers";
 import mockData from "@/data/mockData";
